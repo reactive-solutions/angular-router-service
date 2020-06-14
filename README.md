@@ -7,10 +7,10 @@ Define your routes per feature
 
 ``` typescript
 export enum ProjectRoute {
-  Projects     = 'projects',
-  ProjectsAll  = 'projects/all',
-  ProjectsDetail = 'projects/:id',
-  ProjectsContent = 'projects/:id/content',
+  Projects          = 'projects',
+  ProjectsAll       = 'projects/all',
+  ProjectsDetail    = 'projects/:id',
+  ProjectsContent   = 'projects/:id/content',
 
   // TODO: split absolute and relative routes
   All  = 'all',
@@ -18,7 +18,7 @@ export enum ProjectRoute {
 }
 
 export enum AnotherFeatureRoute {
-  AnotherFeatureRoute     = 'another-feature',
+  AnotherFeatureRoute = 'another-feature',
 }
 ```
 

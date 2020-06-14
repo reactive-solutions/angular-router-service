@@ -1,4 +1,4 @@
-# router-service
+# angular-router-service
 
 Sample for painless routing via a single router service, and the use of enums to prevent repeating route strings cross the whole app.
 

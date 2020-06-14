@@ -11,7 +11,7 @@ import { ProjectRoute }      from 'src/app/utils/routes/project.routes';
 export class ProjectsDetailComponent implements OnInit {
   public id: string;
 
-  constructor(private activatedRoute: ActivatedRoute,
+  constructor(private readonly activatedRoute: ActivatedRoute,
               private readonly routerService: RouterService) { }
 
   ngOnInit(): void {

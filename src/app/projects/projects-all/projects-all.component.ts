@@ -8,8 +8,9 @@ import { ProjectRoute }  from 'src/app/utils/routes/project.routes';
   styleUrls:   ['./projects-all.component.scss']
 })
 export class ProjectsAllComponent {
-  displayedColumns: string[] = ['projectId', 'name', 'actions'];
-  dataSource: Array<{ projectId: number, name: string }> = [
+  projectColumns: string[] = ['projectId', 'name', 'actions'];
+
+  projects: Array<{ projectId: number, name: string }> = [
     { projectId: 1, name: 'Project One' }
   ];
 
@@ -17,7 +18,6 @@ export class ProjectsAllComponent {
   }
 
   public show(id: number): void {
-    this.routerService
-        .navigateTo(ProjectRoute.ProjectsDetail, id);
+    this.routerService.navigateTo(ProjectRoute.ProjectsDetail, id);
   }
 }
